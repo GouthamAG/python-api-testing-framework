@@ -18,7 +18,8 @@ It demonstrates how to design a scalable test structure with reusable components
 ## Features
 - API client using requests.Session
 - Centralized header management (API key support)
-- Basic API test coverage (GET)
+- Resusable pytest fixture for API client
+- Basic API test coverage (GET, POST)
 - HTML test reporting
 
 ---
@@ -64,13 +65,14 @@ After execution, open `report.html` in your browser to view results.
 
 ## Sample Test Covered
 - GET users API validation  
+- POST create user API validation
 - Status code verification  
 - Response structure validation  
 
 ---
 
 ## Future Improvements
-- Add POST / PUT / DELETE API tests  
+- Add PUT / DELETE API tests  
 - Authentication token handling  
 - Logging (request & response)  
 - Schema validation  

@@ -44,5 +44,3 @@ class APIClient:
     
     def delete(self, endpoint):
         return self.session.delete(f"{self.base_url}{endpoint}")
-
-
