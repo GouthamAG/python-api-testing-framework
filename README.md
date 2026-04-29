@@ -19,7 +19,8 @@ It demonstrates how to design a scalable test structure with reusable components
 - API client using requests.Session
 - Centralized header management (API key support)
 - Resusable pytest fixture for API client
-- Basic API test coverage (GET, POST)
+- Basic API test coverage (GET, POST, Negative Scenarios)
+- Defensive response validation based on content-type (JSON / HTML)
 - HTML test reporting
 
 ---
@@ -68,6 +69,7 @@ After execution, open `report.html` in your browser to view results.
 - POST create user API validation
 - Status code verification  
 - Response structure validation  
+- Response validation based on content type
 
 ---
 
