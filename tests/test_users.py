@@ -1,4 +1,6 @@
+from jsonschema import validate
 from utils.api_client import APIClient
+from utils.schemas import USER_LIST_SCHEMA
 
 # client = APIClient()
 
@@ -7,6 +9,14 @@ def test_get_users(client):
 
     assert response.status_code == 200
     assert "data" in response.json()
+
+
+def test_get_users_1(client):
+    response = client.get("/users?page=2")
+
+    assert response.status_code == 200
+    data =  response.json()
+    validate(instance=data, schema=USER_LIST_SCHEMA)
 
 
 def test_non_existing_user(client):

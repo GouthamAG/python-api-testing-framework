@@ -21,6 +21,7 @@ It demonstrates how to design a scalable test structure with reusable components
 - Resusable pytest fixture for API client
 - Basic API test coverage (GET, POST, Negative Scenarios)
 - Defensive response validation based on content-type (JSON / HTML)
+- JSON Schema Validation for API response structure
 - HTML test reporting
 
 ---
@@ -70,6 +71,15 @@ After execution, open `report.html` in your browser to view results.
 - Status code verification  
 - Response structure validation  
 - Response validation based on content type
+- Schema validation of API response using jsonschema
+
+---
+
+## Key Concepts Demonstrated
+- API automation using pytest and requests
+- Reusable framework design with fixtures and utilities
+- Defensive testing for inconsistent API responses
+- JSON schema validation for response contract verification
 
 ---
 
